@@ -4,7 +4,12 @@ import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
-// API Framework
+//UI
+
+$('form#doctor').submit
+
+
+
 (async () => {
   let doctor = new Doctor();
   const response = await marsphoto.getDoctor();
@@ -12,7 +17,7 @@ import './styles.css';
 })();
 
 const getElements = function(response) {
-  $('#marsPhotos').attr("src", response.photos[100].img_src);
+  $('#dailyDesc').text(response.explanation);
 };
 
 

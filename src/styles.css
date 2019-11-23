@@ -1,3 +1,8 @@
-#answer {
-  display: none;
+body {
+  font-family: monospace;
+}
+
+h1 {
+font-family: cursive;
+font-weight: bold;
 }

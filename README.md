@@ -25,7 +25,7 @@
   - Example Output: "
 
 ### Technologies Used
-HTML, CSS, JavaScript, jQuery, clean-webpack-plugin 3.0.0, css-loader 3.2.0, eslint 6.3.0, eslint-loader 3.0.0, html-webpack-plugin 3.2.0, style-loader 1.0.0, uglifyjs-webpack-plugin 2.2.0, webpack 4.39.3, webpack-cli 3.3.8, webpack-dev-server 3.8.0, and BetterDoctor API.
+HTML, CSS, JavaScript, jQuery, clean-webpack-plugin 3.0.0, css-loader 3.2.0, eslint 6.3.0, eslint-loader 3.0.0, html-webpack-plugin 3.2.0, style-loader 1.0.0, uglifyjs-webpack-plugin 2.2.0, webpack 4.39.3, webpack-cli 3.3.8, webpack-dev-server 3.8.0, dotenv-webpack 1.7.0, and BetterDoctor API.
 
 Project was written using Google Chrome; no other browsers were tested for compatibility.
 

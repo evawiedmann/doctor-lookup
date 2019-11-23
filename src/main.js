@@ -5,24 +5,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 //UI
+$(document).ready(function(){
+  $('form#doctor').submit(function(event){
+    event.preventDefault();
 
-$('form#doctor').submit
-
-
-
-(async () => {
-  let doctor = new Doctor();
-  const response = await marsphoto.getDoctor();
-  getElements(response);
-})();
-
-const getElements = function(response) {
-  $('#dailyDesc').text(response.explanation);
-};
+    const userInput = $('input#userSearch').val();
 
 
 
+    (async () => {
+      let doctor = new Doctor();
+      const response = await doctor.getDoctor();
+      getElements(response);
+    })();
 
-'No docotors fit your request'
+    const getElements = function(response) {
+      $('#dr').text(response.explanation);
+    };
 
-''
+
+
+
+    'No docotors fit your request'
+
+    ''
+  });

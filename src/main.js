@@ -1,7 +1,7 @@
-// import { Class } from  './backend.js';
-// import $ from 'jquery';
-// import 'bootstrap';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import './styles.css';
-//
-// // API Framework
+import { Doctor } from  './backend.js';
+import $ from 'jquery';
+import 'bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './styles.css';
+
+// API Framework

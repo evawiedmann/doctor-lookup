@@ -1,1 +1,4 @@
-// export class XXX {)
+export class Doctor {
+
+
+}

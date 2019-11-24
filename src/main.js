@@ -6,12 +6,11 @@ import './styles.css';
 
 //UI
 $(document).ready(function(){
-  $('form#doctor').submit(function(event){
+  $('form#dr').submit(function(event){
     event.preventDefault();
 
     const userInput = $('input#userSearch').val();
-
-
+    console.log(userInput);
 
     (async () => {
       let doctor = new Doctor();
@@ -20,13 +19,7 @@ $(document).ready(function(){
     })();
 
     const getElements = function(response) {
-      $('#dr').text(response.explanation);
+      $('#docAnswer').text(response.explanation);
     };
 
-
-
-
-    'No docotors fit your request'
-
-    ''
   });

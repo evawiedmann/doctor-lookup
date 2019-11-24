@@ -8,7 +8,7 @@ export class Doctor {
 
 
     } catch (error) {
-      console.error('You have encountered an error.;''+error.message);
+      console.error('You have encountered an error.'+error.message);
     }
 
   }

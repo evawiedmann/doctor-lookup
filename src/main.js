@@ -11,6 +11,8 @@ $(document).ready(function(){
 
     const userInput = $('input#userSearch').val();
     console.log(userInput);
+    const docInput =$('input#docSearch').val();
+    console.log(docInput);
 
     (async () => {
       let doctor = new Doctor();

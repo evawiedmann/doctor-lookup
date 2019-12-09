@@ -7,7 +7,7 @@ export class Doctor {
 
 
     } catch (error) {
-      return 'You have encountered an error.'+error.message;
+      return 'You have encountered an error.'+ error.message;
     }
 
   }

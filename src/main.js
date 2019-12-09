@@ -9,6 +9,7 @@ $(document).ready(function(){
   $('form#dr').submit(function(event){
     event.preventDefault();
 
+    $('#error').hide();
     const userInput = $('input#userSearch').val();
     console.log(userInput);
     const docInput =$('input#docSearch').val();
@@ -19,14 +20,16 @@ $(document).ready(function(){
       const response = await doctor.getDoctor(userInput);
       getElements(response);
     })();
-
-    const getElements = function(response) {
-      $('#firstN').text(response.data[0].profile.first_name);
-      $('#lastN').text(response.data[0].profile.last_name);
-      $('#address').text(response.data[0].profile.);
-      $('#phone').text(response.data[0].profile.);
-      $('#web').text(response.data[0].profile.);
-      $('#newPatients').text(response.data[0].profile.);
+    for (var i = 0; i < response.data.length; i++) {
+      getElements(response, i);
     };
 
+    const getElements = function(response, i) {
+      htmlForDoctorInfo +=
+        "<div> <p>" + response.data[i].profile.first_name + " " + response.data[i].profile.last_name + " " + "</p> <p>" response.data[i].practices[0].visit_address + " " + "</p> <p>" response.data[i].practices[0].phones[0].number + " " + response.data[i].practices[0].website + " " + "</p> <p>" response.data[i].practices[0].accepts_new_patients + "</p> </div>";
+    };
+    if (response.includes('You have encountered an error.')){
+      $('#error').show();
+      $('#errorMessage').text('You have encountered an error.'+ response);
+    }
   });
